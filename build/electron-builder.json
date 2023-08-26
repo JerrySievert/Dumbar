@@ -1,0 +1,10 @@
+{
+  "appId": "com.legitimatesounding.dumbar",
+  "mac": {
+    "category": "public.app-category.reference",
+    "icon": "./app-icon.png",
+    "entitlements": "build/entitlements.mac.plist",
+    "identity": "Jerry Sievert (8W4GSNA7C5)",
+    "mergeASARs": true
+  }
+}
