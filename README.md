@@ -12,7 +12,7 @@ Dumbar uses the [Ollama](https://ollama.ai) API for any queries to an LLM.
 
 ## Requirements
 
-In order to run Dumbar, you must have [Ollama](https://ollama.ai) installed. As of the writing of this README, only Apple Silicon Macs are supported.
+In order to run Dumbar, you must have [Ollama](https://ollama.ai) installed. ~As of the writing of this README, only Apple Silicon Macs are supported.~ happily corrected by [Hacker News](https://news.ycombinator.com/item?id=37276282), there is now an x64 release available!
 
 ### Configuration
 
