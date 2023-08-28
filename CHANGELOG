@@ -1,0 +1,5 @@
+1.0.1              - August 28, 2023
+                     fix host preference for connecting to ollama for query
+
+1.0.0              - August 26, 2023
+                     initial release

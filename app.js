@@ -103,7 +103,7 @@ const query = async () => {
 
   let response;
 
-  const host = get_pref('prefs:host') ? get_pref('prefs.host') : '127.0.0.1';
+  const host = get_pref('prefs:host') ? get_pref('prefs:host') : '127.0.0.1';
   const port = get_pref('prefs:port') ? get_pref(prefs.port) : 11434;
   const url = `http://${host}:${port}`;
 

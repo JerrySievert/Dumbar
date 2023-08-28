@@ -1,10 +1,14 @@
 {
   "name": "Dumbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Menubar app for LLMs using Ollama",
   "main": "main.js",
   "author": "Jerry Sievert <code@legitimatesounding.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JerrySievert/Dumbar.git"
+  },
   "devDependencies": {
     "electron": "^26.1.0",
     "electron-builder": "^24.6.3"
