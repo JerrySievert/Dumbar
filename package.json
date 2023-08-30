@@ -1,6 +1,6 @@
 {
   "name": "Dumbar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Menubar app for LLMs using Ollama",
   "main": "main.js",
   "author": "Jerry Sievert <code@legitimatesounding.com>",
@@ -18,7 +18,7 @@
     "menubar": "^9.3.0"
   },
   "scripts": {
-    "package": "electron-builder build --mac --config build/electron-builder.json",
+    "package": "electron-builder build --mac --config build/electron-builder.json --x64 --arm64",
     "dumbar": "electron ."
   }
 }
