@@ -5,6 +5,8 @@
  * https://github.com/JerrySievert/Dumbar
  */
 
+const Parser = require('jsonparse');
+
 /* Our error message, in case anything goes wrong. */
 const error_message = `<div class="error">Unable to connect to Ollama.<br><br>Is it running?</div>`;
 
@@ -119,16 +121,16 @@ const query = async () => {
         document.getElementById('spinner').classList.add('hidden');
 
         const reader = response.body.getReader();
+        const parser = new Parser();
+        parser.onValue = (value) => {
+          if (value.response) {
+            resultsWindow.innerText += value.response;
+          }
+        };
 
         for await (const chunk of read_chunks(reader)) {
           let str = utf8decoder.decode(chunk.buffer);
-          let obj = JSON.parse(str);
-
-          if (obj.done) {
-            return;
-          } else if (obj.response) {
-            resultsWindow.innerText += obj.response;
-          }
+          parser.write(str);
         }
       })
       .catch((err) => {

@@ -1,3 +1,7 @@
+1.0.2              - August 29, 2023
+                     fix possibility of partial packets with a streaming json
+                     parser
+
 1.0.1              - August 28, 2023
                      fix host preference for connecting to ollama for query
 

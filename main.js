@@ -9,11 +9,16 @@ const mb = menubar({
   browserWindow: {
     transparent: true,
     width: 350,
-    height: 550
+    height: 550,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
   },
   icon,
   showDockIcon: false
 });
+
 mb.on('show', () => {
   mb.app.dock.hide();
 });
